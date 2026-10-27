@@ -63,9 +63,15 @@ The script trims values, lowercases email addresses, removes duplicates by email
 
 The intended workflow is OpenCode as the AI coding harness, with an LLM reached through OpenRouter. Work is decomposed into small changes; project instructions/skills supply context; changes are reviewed and manually exercised. This repository does not claim that every line was handwritten. The developer should be ready to explain the design, run the demos, and discuss limitations.
 
-## Before publishing
+## Project status
 
-- Review every file and ensure you can explain it.
-- Run the commands above; capture a short screen recording of RequestPilot and/or the bot.
-- Do not add credentials, personal data, or client data.
-- If publishing to GitHub, name the repository e.g. `ai-automation-portfolio`, set a useful description, and link the repo in the application. A GitHub repository has not been published automatically by this bundle.
+- Public repository: https://github.com/PhoneixAI/ai-automation-portfolio
+- `index.html` contains an interactive lead-triage demo.
+- `app.py` provides a FastAPI backend with optional LLM integration.
+- `telegram_bot.py` contains a Telegram bot prototype.
+- `csv_cleaner.py` provides CSV cleaning and JSON report generation.
+
+These are demonstration prototypes, not production deployments.
+The LLM mode requires API configuration, and the Telegram bot
+requires a bot token. Review the setup instructions before running.
+
